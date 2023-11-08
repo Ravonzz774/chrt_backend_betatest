@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
+    <!-- <script src="assets/script/isLogin.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    
+    
+    <!-- <script src="assets/script/timetable-item.js" defer></script> -->
+    <!-- <script src="assets/script/user_name.js" defer></script> -->
+    
+    <title>Расписание</title>
+  <script type="module" crossorigin src="/assets/main-0c65666d.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/assets/menu-script-9e7969f3.js">
+  <link rel="stylesheet" href="/assets/index-02aa9730.css">
+  <link rel="stylesheet" href="/assets/profile-menu-0f259563.css">
+</head>
+<body>
+    <div class="loading"><p>Загрузка</p></div>
+    <div id="menu-page-disabler" class="timetable">
+        <div class="nav__panel container">
+            <button id="burger" onclick=""><img src="public/img/burger-menu.svg" alt=""></button>
+            <div class="timetable__group__switch">
+                <h1 id="timetable-group-switch"><span id="timetable-group-name"></span> <img src="public/img/arrow.svg" alt=""></h1>
+                <div class="select__space"></div>
+            </div>
+
+            <a href="timetable-settings-selected-groupes.html"><img src="public/img/settings-icon.svg" alt=""></a>
+        </div>
+        <div class="week__switcher container">
+            <h2 class="week__title">Текущая неделя</h2>
+            <input type="checkbox" name="" id="week-checkbox">
+            <label for="week-checkbox"><img id="week-arrow" src="public/img/arrow.svg" alt=""></label>
+            
+            </div>
+        <div class="timetable__block container">
+        </div>
+        <h1 id="not-found-timetable" >Нет расписания</h1>
+    </div>
+</body>
+</html>

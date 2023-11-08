@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="assets/script/isLogin.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <title>Расписание</title>
+  <script type="module" crossorigin src="/assets/timetable-settings-selected-groupes-b4e3c1c8.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/assets/timetable-settings-selected-groupes-b7639a86.css">
+</head>
+<body>
+    <div class="loading"><p>Загрузка</p></div>
+    <div class="timetable__settings__selected">
+        <div class="nav__panel container">
+            <button id="burger" onclick="open('index.html', '_self', false); window.close() "><img src="public/img/arrow.svg" alt=""></button>
+            <h1>Расписание</h1>
+            <button onclick=""><img src="public/img/settings-icon.svg" alt=""></button>
+        </div>
+        <h3>Настройки</h3>
+        <div id="selected-groupe" class="selected__groups container">
+            <h1>Расписание студентов</h1>
+            <div class="selected__items"></div>
+        </div>
+        <div id="selected-teacher" class="selected__teachers container">
+            <h1>Расписание преподавателей</h1>
+            <div class="selected__teachers__items"></div>
+        </div>
+    </div>
+    <div class="timetable__settings__footer__btn">
+        <a href="timetable-settings.html" id="timetable-settings-change-btn" class="timetable__settings__save__btn">Изменить</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="assets/script/isLogin.js"></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <title>Расписание</title>
+  <script type="module" crossorigin src="/assets/timetable-settings-1afeafe3.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/assets/teacher-search-78c31b0d.js">
+  <link rel="stylesheet" href="/assets/timetable-settings-be34ce0c.css">
+</head>
+<body>
+    <div class="loading"><p>Загрузка</p></div>
+    <div  class="timetable__settings">
+        <div class="nav__panel container">
+            <button id="burger" onclick="open('index.html', '_self', false); window.close() "><img src="public/img/arrow.svg" alt=""></button>
+            <h1>Расписание</h1>
+            <button onclick=""><img src="public/img/settings-icon.svg" alt=""></button>
+        </div>
+        <h3>Настройки</h3>
+        <div class="timetable__settings__block container">
+            <form class="timetable__settings__type__select" action="">
+                <input type="radio" name="timetable-settings-btn" id="timetable-settings-student-btn" checked="true">
+                    <label for="timetable-settings-student-btn">Студент</label>
+                <input type="radio" name="timetable-settings-btn" id="timetable-settings-teacher-btn">
+                    <label for="timetable-settings-teacher-btn">Преподаватель</label>
+            </form>
+            <div id="timtable-settings-page-disabler" class="teachers__search">
+                <div id="search" class="search container">
+                    <form action="" class="">
+                        <div class="input__panel"><input type="text" name="search-input" id="search-input" placeholder="Поиск"></div>
+                        <h3 id="search-subtitle"></h3>
+                    </form>
+                </div>
+            </div>
+            <form id="menu-page-disabler" class="timetable__settings__course__select" action="">
+                <input type="radio" name="timetable-settings-course-btn" id="timetable-settings-1st-course-btn">
+                    <label for="timetable-settings-1st-course-btn">1 курс</label>
+                <input type="radio" name="timetable-settings-course-btn" id="timetable-settings-2nd-course-btn">
+                    <label for="timetable-settings-2nd-course-btn">2 курс</label>
+                <input type="radio" name="timetable-settings-course-btn" id="timetable-settings-3rd-course-btn">
+                    <label for="timetable-settings-3rd-course-btn">3 курс</label>
+                <input type="radio" name="timetable-settings-course-btn" id="timetable-settings-4th-course-btn">
+                    <label for="timetable-settings-4th-course-btn">4 курс</label>
+                <input type="radio" name="timetable-settings-course-btn" id="timetable-settings-5th-course-btn">
+                    <label for="timetable-settings-5th-course-btn">5 курс</label>
+            </form>
+            <div id="menu-page-disabler" class="timetable__settings__item">
+                <h1>Выберите группу <label id="groupe-select-list"><img src="public/img/arrow.svg" alt=""></label></span></h1>
+                <div id="groupe-list" class="groupe__list"></div>   
+            </div>
+        </div>
+        <button id="timetable-settings-save-btn" class="timetable__settings__save__btn">Сохранить</button>
+    </div>
+</body>
+</html>
